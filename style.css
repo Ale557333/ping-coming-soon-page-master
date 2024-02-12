@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
   background: #FFF;
   font-family: Libre Franklin;
-  font-size: 20px;
+  font-size: 1.3rem;
 }
 
 .container {
@@ -22,7 +22,7 @@ body {
 }
 .text h2 {
   font-size: 2rem;
-  margin-bottom: 5px;
+  margin-bottom: 0.8rem;
 }
 
 .signup-form {
@@ -31,17 +31,15 @@ body {
 }
 
 #username::placeholder {
-    color: transparent;
+    color: hsl(0, 0%, 59%);
     font-size: 0.8rem;
-    border-radius: 12px;
-    padding: 10px;
 }
 
-.interactive-element:hover {
+.button:hover {
   background-color: hsl(223, 87%, 63%);
 }
 
-.interactive-element {
+.button {
     border-radius: 42px;
     width: 140px;
     height: 50px;
@@ -114,7 +112,7 @@ i {
     width: 100%;
   }
 
-  .interactive-element {
+  .button {
     width: 100%;
     margin-top: 10px;
   }
