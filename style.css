@@ -16,7 +16,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  max-width: 50rem;
   text-align: center;
   margin: 0 auto;
 }
@@ -72,8 +72,6 @@ main h2 {
   font-family: Libre Franklin;
   font-weight: 300;
 }
-
-
 
 footer {
   display: flex;
