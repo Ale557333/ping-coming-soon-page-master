@@ -16,17 +16,17 @@ form.addEventListener('submit', event => {
   const isAvalidUsername = usernameRegex.test(username)
   
   if (username) {
-    feedbackMessage.innerHTML = 'Thanks'
+    feedbackMessage.innerHTML = 'Thanks for submitting!'
     feedbackMessage.classList.remove('error')
-    clearInput()
   }
-  
+
   if (!username) {
     feedbackMessage.innerHTML = 'Whoops! It looks like you forgot to add your email'
     feedbackMessage.setAttribute('class', 'error')
     inputUser.setAttribute('class', 'input-user-error')
+    return
   }
-
+  
   if (!isAvalidUsername) {
     feedbackMessage.innerHTML = 'Please provide a valid email address'
     feedbackMessage.setAttribute('class', 'error')
