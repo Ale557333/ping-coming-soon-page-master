@@ -3,7 +3,7 @@ const feedbackMessage = document.querySelector('.feedback-message')
 const usernameInput = document.querySelector('#username')
 const inputUser = document.querySelector('.input-user')
 
-const clearInput = () => {
+const clearInput = (usernameInput) => {
   usernameInput.value = ''
   usernameInput.focus()
 }
@@ -18,6 +18,7 @@ form.addEventListener('submit', event => {
   if (username) {
     feedbackMessage.innerHTML = 'Thanks for submitting!'
     feedbackMessage.classList.remove('error')
+    clearInput(usernameInput)
   }
 
   if (!username) {

@@ -89,6 +89,10 @@ p {
   height: 100%;
 }
 
+.social-icons {
+  color: hsl(223, 87%, 63%)
+}
+
 h1 {
   font-weight: 400;
   font-family: Libre Franklin;
