@@ -40,25 +40,30 @@ p {
 }
 
 .signup-form {
-  margin: 1rem auto;
-  border-radius: 42px;
+  margin: 2rem auto;
+  border-radius: 2rem;
 }
 
 #username::placeholder {
-  color: hsl(0, 0%, 59%);
+  color: hsl(223, 100%, 88%);
+  font-family: Libre Franklin;
   font-size: 0.8rem;
 }
 
-.button:hover {
-  background-color: hsl(223, 87%, 63%);
-}
-
 .button {
-  border-radius: 42px;
+  border-radius: 2rem;
+  border-color: transparent;
+  box-sizing: border-box;
+  transition: all 0.2s;
+  font-family: Libre Franklin;
   width: 140px;
   height: 50px;
   color: white;
   background-color: hsl(223, 87%, 63%);
+}
+
+.button:hover {
+  background-color: hsl(223, 100%, 88%);
 }
 
 #username {
@@ -77,11 +82,11 @@ p {
 }
 
 .error {
-  color: red;
+  color: hsl(354, 100%, 66%);
 }
 
 .input-user-error {
-  border: 2px solid red;
+  border: 2px solid hsl(354, 100%, 66%);
 }
 
 .card img {
